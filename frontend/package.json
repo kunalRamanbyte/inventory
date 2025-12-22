@@ -16,6 +16,8 @@
     "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.0.10"
   }

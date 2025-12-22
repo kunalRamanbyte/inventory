@@ -14,7 +14,7 @@ export default function InventoryPage() {
     const { user, loading: authLoading, logout } = useAuth();
     const router = useRouter();
 
-    const API_URL = "http://127.0.0.1:8001/api/items";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api/items";
 
     useEffect(() => {
         if (!authLoading && !user) {
